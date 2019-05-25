@@ -27,14 +27,43 @@ function kakikae(){
             var windowHeight=$(window).height();
             if((scroll>imgPos-windowHeight+windowHeight/2)&&(already==0)){
                 already++;
-                $("html,body").animate({scrollTop:$('.title').offset().top},1500);
+                $("html,body").animate({scrollTop:$('.title').offset().top},2000);
                 setTimeout(function(){
                     kakikae();
-                },1900)
+                },2400)
                 setTimeout(function(){
                     $('.shoukyo').fadeOut(1000);
                     $('.after').fadeIn(100);
-                },1000)
+                },1500)
+            }
+        });
+    });
+  });
+  $(function(){
+    $(window).scroll(function(){
+        $(".bousouF").each(function(){
+            var imgPos=$(this).offset().top;
+            var scroll=$(window).scrollTop();
+            var windowHeight=$(window).height();
+            if((scroll>imgPos-windowHeight+windowHeight/2)&&(already==1)){
+                already++;
+                $('.bousou').t({
+    delay:0, //アニメーションの遅延
+    speed:40, //アニメーションの速度
+    speed_vary:true, //リアルなタイピングのスピード
+    beep:false, //タイピング音の有無
+    mistype:true, //ミスタイプの有無
+    locale:'en', //キーボードレイアウト。'en' (english) もしくは 'de' (german)
+    caret:true, //カーソル
+    blink:true, //カーソルの点滅の有無
+    blink_perm:false, //カーソルの点滅の継続
+    repeat:0, //繰り返し
+    tag:'span', //要素を内包するタグ
+    pause_on_click:false, //クリックで一時停止
+    init:function(elm){}, //タイピング開始時のコールバック
+    typing:function(elm,chr_or_elm,left,total){}, //タイピング毎のコールバック
+    fin:function(elm){} //タイピング終了時のコールバック
+  });
             }
         });
     });
