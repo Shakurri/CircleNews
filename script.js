@@ -19,6 +19,21 @@ function kakikae(){
     fin:function(elm){} //タイピング終了時のコールバック
   });
 };
+
+function no_scroll(){
+//PC用
+var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+$(document).on(scroll_event,function(e){e.preventDefault();});
+//SP用
+$(document).on('touchmove.noScroll', function(e) {e.preventDefault();});
+}
+function return_scroll(){
+//PC用
+var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+$(document).off(scroll_event);
+//SP用
+$(document).off('.noScroll');
+}
   $(function(){
     $(window).scroll(function(){
         $(".scrollF").each(function(){
@@ -27,6 +42,7 @@ function kakikae(){
             var windowHeight=$(window).height();
             if((scroll>imgPos-windowHeight+windowHeight/2)&&(already==0)){
                 already++;
+                no_scroll();
                 $("html,body").animate({scrollTop:$('.title').offset().top},2000);
                 $('.bousou').t({
     delay:7, //アニメーションの遅延
@@ -45,9 +61,14 @@ function kakikae(){
     typing:function(elm,chr_or_elm,left,total){}, //タイピング毎のコールバック
     fin:function(elm){} //タイピング終了時のコールバック
   });
+
+
                 setTimeout(function(){
                     kakikae();
                 },2400)
+                setTimeout(function(){
+                    return_scroll();
+                },2700)
                 setTimeout(function(){
                     $('.shoukyo').fadeOut(1000);
                     $('.after').fadeIn(100);
