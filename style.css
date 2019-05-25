@@ -2,7 +2,7 @@ header{
 	width:100%;
 }
 .title{
-	font-size: 30px;
+	font-size: 40px;
 	color:white;
 	background-color:#0000cd;
 	padding:10px
@@ -14,11 +14,12 @@ header{
 
 }
 .contents{
-	font-size: 15px;
+	font-size: 25px;
 	color:white;
 	padding:0px 10px;
 }
 .scBox{
+	font-size: 20px;
 	width:49%;
 	height:100px;
 	color: #4682b4;
@@ -38,31 +39,31 @@ header{
 	padding: 1%;
 }
 .headline{
-	font-size: 7vw;
+	font-size: 8vw;
 	border-bottom:3px solid #0000cd;
 	border-left:20px solid #0000cd;
 	padding-left: 10px;
 }
 .imgBox{
 	width:100%;
-	margin:3%;
+	margin:5%;
 }
 .sentenceBox{
-	margin-top:8%; 
-	font-size: 23px;
+	margin-top:10%; 
+	font-size: 30px;
 	padding: 1%;
-	line-height: 50px;
+	line-height: 70px;
 
 }
 .kyoutyou{
-	font-size: 35px;
+	font-size: 40px;
 	color:red;
 }
 .utikesi{
 	text-decoration:line-through;
 }
 .smallhead{
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: bold;
 	border-bottom:3px solid #0000cd;
 	margin-top: 5%;
