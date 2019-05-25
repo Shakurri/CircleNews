@@ -71,7 +71,9 @@ header{
 
 
 
-
+.bousou{
+	display: none;
+}
 .kakikae{
 	display: none;
 }
