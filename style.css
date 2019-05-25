@@ -1,0 +1,79 @@
+header{
+	width:100%;
+}
+.title{
+	font-size: 30px;
+	color:white;
+	background-color:#0000cd;
+	padding:10px
+}
+.conBox{
+	width:100%;
+	background-color: #4682b4;
+	padding:5px;
+
+}
+.contents{
+	font-size: 15px;
+	color:white;
+	padding:0px 10px;
+}
+.scBox{
+	width:49%;
+	height:100px;
+	color: #4682b4;
+	overflow:auto;
+	display: inline-block;
+	border:1px #F0F0F0 dashed;
+}
+.adBox{
+	width:30%;
+	height:500vh;
+	background-color: gray;
+	margin-left: 70%;
+	position:absolute;
+}
+.article{
+	width:68%;
+	padding: 1%;
+}
+.headline{
+	font-size: 7vw;
+	border-bottom:3px solid #0000cd;
+	border-left:20px solid #0000cd;
+	padding-left: 10px;
+}
+.imgBox{
+	width:100%;
+	margin:3%;
+}
+.sentenceBox{
+	margin-top:8%; 
+	font-size: 23px;
+	padding: 1%;
+	line-height: 50px;
+
+}
+.kyoutyou{
+	font-size: 35px;
+	color:red;
+}
+.utikesi{
+	text-decoration:line-through;
+}
+.smallhead{
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom:3px solid #0000cd;
+	margin-top: 5%;
+}
+
+
+
+
+.kakikae{
+	display: none;
+}
+.after{
+	display: none;
+}
