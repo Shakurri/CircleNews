@@ -111,12 +111,31 @@ width: 24vw;
 	left: -50vw;
 	background-color:black;
 }
-.imgZZZ{
+.resetBox{
 	position: absolute;
+	top:700vh;
+	width: 100vw;
+}
+.imgZZZ{
 	width:60%;
 	margin:30% 20% 0% 20%;
-	top:700vh;
 }
+.resetB{
+	width: 26%;
+    margin: 0px 37%;
+    z-index: 5;
+    background-color: #ffffff88;
+    padding: 5px 10px;
+    position: relative;
+    top: -30vh;
+    font-size: 27px;
+    border-radius: 8px;
+}
+.resetB:hover{
+	background-color: white;
+}
+
+
 .kyoutyou{
 	color:red;
 	font-size: 35px;
@@ -139,4 +158,13 @@ width: 24vw;
 .fixed{
 	position: fixed;
 	top:0.5vw;
+}
+.reset{
+	display: none;
+	position: fixed;
+	width:100vw;
+	height:100vh;
+	background-color: white;
+	top: 0px;
+	left:0px;
 }
