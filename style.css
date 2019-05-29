@@ -1,6 +1,7 @@
 header{
 	width:100%;
 }
+
 .title{
 	font-size: 50px;
 	color:white;
@@ -44,6 +45,7 @@ header{
 .article{
 	width:68%;
 	padding: 1%;
+	height: 250vw;
 }
 .headline{
 	font-size: 5vw;
@@ -57,27 +59,19 @@ header{
 	margin:3% 3% 3% 0%;
 }
 .imgBoxMini{
-	    width: 30%;
-    margin: 3% 3% 3% 0%;
-    left: 38%;
+width: 24vw;
+    margin-top: 5vh;
     position: absolute;
 }
 .sentenceBox{
 	margin-top:5%; 
 	font-size: 25px;
 	padding: 1%;
-	line-height: 60px;
+	line-height: 70px;
 
 }
-.kyoutyou{
-	font-size: 40px;
-	color:red;
-}
 .caption{
-    font-size: 18px;
-    position: relative;
-    left: 37vw;
-    top: 30vw;
+    font-size: 10px;
 }
 .utikesi{
 	text-decoration:line-through;
@@ -90,11 +84,50 @@ header{
 }
 .indent{
 	width:36vw;
+	margin-left:44%;
 }
 
 
 
-.bousou{
+
+
+
+
+
+.darkU{
+	width:149vw;
+	height:150vh;
+	position: absolute;
+	top:500vh;
+	left: -50vw;
+	background:linear-gradient(#00000000,#000);
+
+}
+.darkD{
+	width:149vw;
+	height:190vh;
+	position: absolute;
+	top:650vh;
+	left: -50vw;
+	background-color:black;
+}
+.imgZZZ{
+	position: absolute;
+	width:60%;
+	margin:30% 20% 0% 20%;
+	top:700vh;
+}
+.kyoutyou{
+	color:red;
+	font-size: 35px;
+}
+.akaji{
+	color:red;
+}
+.bousou1{
+	display: none;
+}
+.bousou2{
 	display: none;
 }
 .kakikae{
