@@ -336,8 +336,8 @@ function kakikae(){
 
   $(function(){
     $('.resetB').on('click',function(){
-        $("html,body").animate({scrollTop:$('.headline').offset().top},5000);
-        $(".reset").fadeIn(5010);
+        $("html,body").animate({scrollTop:$('.headline').offset().top},3000);
+        $(".reset").fadeIn(3010);
         $(".article").addClass("noise");
         $('.bousou2').t({
                 delay:0, //アニメーションの遅延
@@ -364,8 +364,8 @@ function kakikae(){
 });
   $(function(){
     $('.resetB2').on('click',function(){
-        $("html,body").animate({scrollTop:$('.headline').offset().top},5000);
-        $(".reset").fadeIn(5010);
+        $("html,body").animate({scrollTop:$('.headline').offset().top},3000);
+        $(".reset").fadeIn(3010);
         $(".article").addClass("noise");
         $('.bousou2').t({
                 delay:0, //アニメーションの遅延
@@ -392,8 +392,8 @@ function kakikae(){
 });
   $(function(){
     $('.resetB3').on('click',function(){
-        $("html,body").animate({scrollTop:$('.headline').offset().top},5000);
-        $(".reset").fadeIn(5010);
+        $("html,body").animate({scrollTop:$('.headline').offset().top},3000);
+        $(".reset").fadeIn(3010);
         $(".article").addClass("noise");
         setTimeout(function(){
             window.location.href="CircleNews100.html";
