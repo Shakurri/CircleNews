@@ -30,11 +30,16 @@ header{
 	border:1px #F0F0F0 dashed;
 }
 .adBox{
+	border:2px solid gray;
 	width:30%;
-	height:500vh;
-	background-color: gray;
+	/*height:500vh;*/
+	background-color: white;
 	margin-left: 70%;
 	position:absolute;
+}
+.imgBoxAd{
+	width:86%;
+	margin:8%;
 }
 .day{
 	font-size: 20px;
@@ -59,7 +64,7 @@ header{
 	margin:3% 3% 3% 0%;
 }
 .imgBoxMini{
-width: 24vw;
+width: 23vw;
     margin-top: 5vh;
     position: absolute;
 }
@@ -111,10 +116,35 @@ width: 24vw;
 	left: -50vw;
 	background-color:black;
 }
+.darkUL{
+	width:149vw;
+	height:70vh;
+	position: absolute;
+	top:480vh;
+	left: -50vw;
+	background:linear-gradient(#00000000,#000);
+
+}
+.darkDL{
+	width:149vw;
+	height:290vh;
+	position: absolute;
+	top:549vh;
+	left: -50vw;
+	background-color:black;
+}
 .resetBox{
 	position: absolute;
 	top:700vh;
 	width: 100vw;
+	text-align: center;
+}
+.resetBoxL{
+	position: absolute;
+	top:590vh;
+	width: 100vw;
+	color: white;
+	text-align: center;
 }
 .imgZZZ{
 	width:60%;
@@ -128,11 +158,84 @@ width: 24vw;
     padding: 5px 10px;
     position: relative;
     top: -30vh;
-    font-size: 27px;
+    font-size: 25px;
     border-radius: 8px;
 }
 .resetB:hover{
 	background-color: white;
+}
+.resetB2{
+	width: 26%;
+    margin: 0px 37%;
+    z-index: 5;
+    background-color: #ffffff88;
+    padding: 5px 10px;
+    position: relative;
+    top: -30vh;
+    font-size: 25px;
+    border-radius: 8px;
+}
+.point{
+	position: relative;
+	width: 5%;
+    margin: 0px 0% 0% 100%;
+    z-index: 10;
+    top: -34vh;
+    opacity: 0.0;
+}
+.resetB2:hover{
+	background-color: white;
+}
+.resetB3{
+	width: 26%;
+    margin: 0px 37%;
+    z-index: 5;
+    background-color: #ffffff88;
+    padding: 5px 10px;
+    position: relative;
+    top: -30vh;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+
+
+
+
+.lastMes1{
+	display: none;
+	font-size: 20px;
+}
+.lastMes2{
+	display: none;
+	font-size: 20px;
+}
+.lastMes3{
+	display: none;
+	font-size: 20px;
+}
+.lastMes4{
+	display: none;
+	font-size: 20px;
+}
+.lastMes5{
+	display: none;
+	font-size: 20px;
+}
+.lastMes6{
+	display: none;
+	font-size: 20px;
+}
+.lastMes7{
+	display: none;
+	font-size: 20px;
+}
+.lastMes8{
+	display: none;
+	font-size: 40px;
+	color: white;
+	width:90vw;
+	margin:0px 5vw;
 }
 
 
@@ -147,6 +250,9 @@ width: 24vw;
 	display: none;
 }
 .bousou2{
+	display: none;
+}
+.bousou3{
 	display: none;
 }
 .kakikae{
@@ -167,4 +273,29 @@ width: 24vw;
 	background-color: white;
 	top: 0px;
 	left:0px;
+}
+.resetL{
+	opacity: 0.0;
+	position: fixed;
+	width:100vw;
+	height:100vh;
+	top: 0px;
+	left:0px;
+}
+.noise{
+	background-image: "image/noise.jpg";
+}
+
+
+.buruburu {
+    display: inline-block;
+    animation: hurueru .1s  infinite;
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
 }
